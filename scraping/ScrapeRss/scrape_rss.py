@@ -17,7 +17,7 @@
 # Algo to extract the casualty stats from linked news article
 #
 # USAGE:
-# python ScrapeRss/ScrapeRss.py  -c -d
+# python ScrapeRss/scrape_rss.py  -c -d
 #   -d : debug mode, write to output.jsonl, else, write to db. default=True
 #   -c : clear cache, default=False
 #   -a : get all, skip cache. api uses this to crawl everything
@@ -25,12 +25,12 @@
 #
 # Example:
 #   - write to db with log messages, doesn't update ./data/<lang>/output.jsonl
-#       - python ScrapeRss/ScrapeRss.py        # writes to test table
-#       - python ScrapeRss/ScrapeRss.py  --table  [ TABLE NAME ]
+#       - python ScrapeRss/scrape_rss.py        # writes to test table
+#       - python ScrapeRss/scrape_rss.py  --table  [ TABLE NAME ]
 #   - debug only
 #       d flag so it doesn't write to db (prints output and write to output.jsonl)
 #       a flag will skip read and write to cache
-#       - python ScrapeRss/ScrapeRss.py  -d -a
+#       - python ScrapeRss/scrape_rss.py  -d -a
 #
 # NOTE:
 #   - Using black to format the code. Feel free to use it (https://black.readthedocs.io/en/stable/)
